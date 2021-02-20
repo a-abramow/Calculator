@@ -31,10 +31,10 @@ def calculate():
     try:
         calc.insert(0, eval(value))
     except (NameError, SyntaxError):
-        messagebox.showinfo('Внимание!', 'Вы ввели недопустимый символ!')
+        messagebox.showinfo('Внимание!!!', 'Вы ввели недопустимый символ!')
         calc.insert(0, 0)
     except (ZeroDivisionError):
-        messagebox.showinfo('Внимание!', 'Вы пытаетесь делить на 0 !')
+        messagebox.showinfo('Внимание!!!', 'Вы пытаетесь делить на 0 !')
         calc.insert(0, 0)
 
 
